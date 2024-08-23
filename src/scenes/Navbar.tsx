@@ -2,17 +2,17 @@ import { Dispatch, SetStateAction, useState } from "react";
 import useMediaQuery from "../hooks/useMediaQuery";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
-type NavbarProps = {
+interface NavbarProps {
   selectedPage: string;
   setSelectedPage: Dispatch<SetStateAction<string>>;
   isTopOfPage: boolean;
-};
+}
 
-type LinkProps = {
+interface LinkProps {
   page: string;
   selectedPage: string;
   setSelectedPage: Dispatch<SetStateAction<string>>;
-};
+}
 
 const Link = ({ page, selectedPage, setSelectedPage }: LinkProps) => {
   const lowerCasePage = page.toLowerCase();

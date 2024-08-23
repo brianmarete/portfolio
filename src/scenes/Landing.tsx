@@ -4,11 +4,11 @@ import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import SocialMediaIcons from "../components/socialmediaicons";
 
-type Props = {
+const Landing = ({
+  setSelectedPage,
+}: {
   setSelectedPage: Dispatch<SetStateAction<string>>;
-};
-
-const Landing = ({ setSelectedPage }: Props) => {
+}) => {
   const isDesktop = useMediaQuery("(min-width: 1060px)");
 
   return (
