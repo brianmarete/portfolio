@@ -2,6 +2,7 @@ import { Dispatch, SetStateAction } from "react";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import SocialMediaIcons from "../components/socialmediaicons";
 
 type Props = {
   setSelectedPage: Dispatch<SetStateAction<string>>;
@@ -60,9 +61,8 @@ const Landing = ({ setSelectedPage }: Props) => {
             </span>
           </p>
 
-          <p className="mt-10 mb-7 text-sm text-center md:text-start">
-            Adipiscing arcu, in aliquam fringilla cursus. Elit arcu elementum
-            viverra malesuada sem ac faucibus dolor. Sagittis scelerisque.
+          <p className="mt-10 mb-7 text-lg text-center md:text-start">
+            Hi! 👋 I'm a software developer from Nairobi, Kenya
           </p>
         </motion.div>
 
@@ -95,6 +95,20 @@ const Landing = ({ setSelectedPage }: Props) => {
               Let's talk.
             </div>
           </AnchorLink>
+        </motion.div>
+
+        <motion.div
+          className="flex mt-5 justify-center md:justify-start"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ delay: 0.4, duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, x: -50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+        >
+          <SocialMediaIcons />
         </motion.div>
       </div>
     </section>
