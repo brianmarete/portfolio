@@ -124,7 +124,11 @@ const Contact = () => {
                   "Max length is 2000 char."}
               </p>
             )}
-
+            <input
+              type="hidden"
+              name="_autoresponse"
+              value="Thanks for reaching out! I will reply to you shortly 😀"
+            />
             <button
               className="p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500"
               type="submit"
