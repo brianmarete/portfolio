@@ -2,7 +2,7 @@ import { Dispatch, SetStateAction } from "react";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import SocialMediaIcons from "../components/socialmediaicons";
+import SocialMediaIcons from "../components/SocialMediaIcons";
 
 const Landing = ({
   setSelectedPage,
