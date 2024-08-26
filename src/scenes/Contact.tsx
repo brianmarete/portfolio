@@ -9,7 +9,7 @@ const Contact = () => {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = async (e) => {
+  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     console.log("~ e", e);
     const isValid = await trigger();
     if (!isValid) {
@@ -108,10 +108,9 @@ const Contact = () => {
 
             <textarea
               className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
-              name="message"
               placeholder="MESSAGE"
-              rows="4"
-              cols="50"
+              rows={4}
+              cols={50}
               {...register("message", {
                 required: true,
                 maxLength: 2000,
