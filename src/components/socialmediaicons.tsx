@@ -1,4 +1,4 @@
-import { FaLinkedin, FaSquareXTwitter } from "react-icons/fa6";
+import { FaLinkedin, FaSquareGithub } from "react-icons/fa6";
 
 const SocialMediaIcons = () => {
   return (
@@ -17,7 +17,7 @@ const SocialMediaIcons = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <FaSquareXTwitter className="text-4xl" />
+        <FaSquareGithub className="text-4xl" />
       </a>
     </div>
   );

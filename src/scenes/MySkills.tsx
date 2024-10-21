@@ -65,16 +65,20 @@ const MySkills = () => {
           <div className="relative h-32">
             <div className="z-10 absolute left-0 top-0">
               <p className="font-playfair font-semibold text-5xl">01</p>
-              <p className="font-playfair font-semibold text-3xl mt-3">
-                Experience
+              <p className="font-playfair font-semibold text-3xl mt-3 uppercase">
+                Web Development
               </p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0" />
           </div>
-          <p className="mt-5">
-            A auctor pharetra hendrerit mattis amet etiam interdum platea. Est
-            morbi porttitor scelerisque fermentum, sagittis non egestas. Amet
-            odio sit sagittis,
+          <p className="mt-5 text-sm">
+            I have extensive fullstack web development experience that
+            encompasses both frontend and backend technologies. I’m proficient
+            in HTML5, CSS3, Tailwind, and frameworks like React.js, Vue.js,
+            Angular, and Ember.js, as well as GraphQL and TypeScript for
+            creating dynamic user interfaces. On the backend, I excel in Node.js
+            and REST APIs, and I specialize in Shopify development, including
+            Liquid Templating.
           </p>
         </motion.div>
 
@@ -93,17 +97,19 @@ const MySkills = () => {
           <div className="relative h-32">
             <div className="z-10 absolute left-0 top-0">
               <p className="font-playfair font-semibold text-5xl">02</p>
-              <p className="font-playfair font-semibold text-3xl mt-3">
-                Innovative
+              <p className="font-playfair font-semibold text-3xl mt-3 uppercase">
+                DevOps
               </p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0" />
           </div>
-          <p className="mt-5">
-            Urna, eget pulvinar dolor cursus volutpat dictum odio. Nec ultricies
-            amet in in neque nibh tortor. Libero sed pretium justo nulla blandit
-            nulla amet habitant iaculis. Iaculis in congue vitae sollicitudin
-            faucibus a
+          <p className="mt-5 text-sm">
+            I also possess solid database management and DevOps skills, with
+            experience in both SQL and NoSQL databases like PostgreSQL, MySQL,
+            and MongoDB. I’ve built and maintained CI/CD pipelines using tools
+            like Git, Docker, and AWS, ensuring efficient workflows and
+            deployments. Additionally, I’m well-versed in AWS and Linux for
+            cloud infrastructure management.
           </p>
         </motion.div>
 
@@ -122,17 +128,20 @@ const MySkills = () => {
           <div className="relative h-32">
             <div className="z-10 absolute left-0 top-0">
               <p className="font-playfair font-semibold text-5xl">03</p>
-              <p className="font-playfair font-semibold text-3xl mt-3">
-                Imaginative
+              <p className="font-playfair font-semibold text-3xl mt-3 uppercase">
+                Leadership
               </p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0" />
           </div>
-          <p className="mt-5">
-            Accumsan eu fringilla nisi, eget. Vitae, eget ut id proin arcu in
-            curabitur. Lectus libero, egestas enim aliquam quis felis amet.
-            Sagittis, amet netus fringilla netus lobortis odio sed platea.
-            Bibendum.
+          <p className="mt-5 text-sm">
+            Beyond my technical expertise, I have strong leadership and
+            mentorship experience. As an Engineering Manager, I’ve led teams and
+            coordinated agile sprints, working closely with product and design
+            teams to meet project goals. I’ve also developed technical
+            curriculums at Moringa School, mentoring junior engineers while
+            applying Scrum/Agile methodologies to enhance collaboration and
+            efficiency.
           </p>
         </motion.div>
       </div>
