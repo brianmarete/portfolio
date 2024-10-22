@@ -36,41 +36,25 @@ function App() {
             setSelectedPage={setSelectedPage}
           />
         )}
-        <motion.div
-          margin="0 0 -200px 0"
-          amount="all"
-          onViewportEnter={() => setSelectedPage("home")}
-        >
+        <motion.div onViewportEnter={() => setSelectedPage("home")}>
           <Landing setSelectedPage={setSelectedPage} />
         </motion.div>
       </div>
       <LineGradient />
       <div className="w-5/6 mx-auto md:h-full">
-        <motion.div
-          margin="0 0 -200px 0"
-          amount="all"
-          onViewportEnter={() => setSelectedPage("skills")}
-        >
+        <motion.div onViewportEnter={() => setSelectedPage("skills")}>
           <MySkills />
         </motion.div>
       </div>
       <LineGradient />
       <div className="w-5/6 mx-auto">
-        <motion.div
-          margin="0 0 -200px 0"
-          amount="all"
-          onViewportEnter={() => setSelectedPage("projects")}
-        >
+        <motion.div onViewportEnter={() => setSelectedPage("projects")}>
           <Projects />
         </motion.div>
       </div>
       <LineGradient />
       <div className="w-5/6 mx-auto md:h-full">
-        <motion.div
-          margin="0 0 -200px 0"
-          amount="all"
-          onViewportEnter={() => setSelectedPage("Contact")}
-        >
+        <motion.div onViewportEnter={() => setSelectedPage("Contact")}>
           <Contact />
         </motion.div>
       </div>

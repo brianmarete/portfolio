@@ -1,8 +1,8 @@
 import { Dispatch, SetStateAction } from "react";
-import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import SocialMediaIcons from "../components/SocialMediaIcons";
+import useMediaQuery from "../hooks/useMediaQuery";
+import { FaLinkedin, FaSquareGithub } from "react-icons/fa6";
 
 const Landing = ({
   setSelectedPage,
@@ -108,7 +108,24 @@ const Landing = ({
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <SocialMediaIcons />
+          <div className="flex justify-center md:justify-start my-10 gap-7">
+            <a
+              className="hover:opacity-50 transition duration-500"
+              href="https://www.linkedin.com/in/brian-marete/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaLinkedin className="text-4xl" />
+            </a>
+            <a
+              className="hover:opacity-50 transition duration-500"
+              href="https://github.com/brianmarete/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaSquareGithub className="text-4xl" />
+            </a>
+          </div>
         </motion.div>
       </div>
     </section>

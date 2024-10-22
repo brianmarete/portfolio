@@ -29,6 +29,23 @@ const Link = ({ page, selectedPage, setSelectedPage }: LinkProps) => {
   );
 };
 
+/**
+ * A component that renders a navigation bar that is either a desktop nav
+ * or a mobile nav popup. The desktop nav is a horizontal list of links
+ * to the different sections of the website. The mobile nav popup is a
+ * vertical list of links that appears when the user clicks on the menu
+ * icon in the top right corner of the page. The component also handles
+ * the state of whether the mobile nav popup is open or closed.
+ *
+ * @param {string} selectedPage - The id of the currently selected page
+ * @param {Dispatch<SetStateAction<string>>} setSelectedPage - A function
+ * that updates the selectedPage state
+ * @param {boolean} isTopOfPage - A boolean indicating whether the user is
+ * currently at the top of the page. If they are, the navbar should have
+ * a transparent background. If they are not, the navbar should have a
+ * red background.
+ * @returns {JSX.Element} A JSX element representing the navigation bar
+ */
 const Navbar = ({
   selectedPage,
   setSelectedPage,
@@ -39,7 +56,9 @@ const Navbar = ({
   const navbarBackground = isTopOfPage ? "" : "bg-red";
 
   return (
-    <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6 `}>
+    <nav
+      className={`${navbarBackground} z-40 w-full fixed top-0 py-6 transition-all duration-300 ease-in-out`}
+    >
       <div className="flex items-center justify-between mx-auto w-5/6">
         <h4 className="font-playfair text-3xl font-bold">BM</h4>
 
