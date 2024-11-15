@@ -25,8 +25,12 @@ const MySkills = () => {
           </p>
           <LineGradient width="w-1/3" />
           <p className="mt-10 mb-7">
-            Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
-            fames odio in at.
+            I’m a passionate software engineer who loves building modern web
+            applications with frameworks like React and Vue.js. I enjoy working
+            with APIs, cloud tools like AWS and Docker, and setting up smooth
+            CI/CD pipelines. With experience leading teams, mentoring others,
+            and creating tech curricula, I’m all about crafting solutions that
+            are not just innovative but also practical and scalable.
           </p>
         </motion.div>
 
